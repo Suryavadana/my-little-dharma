@@ -1,18 +1,21 @@
 // Vercel serverless function: POST /api/ai
-// Uses Google's Gemini API, which has a genuinely free, ongoing tier (no
-// credit card, no expiration — see DEPLOY.md). Keeps the API key on the
-// server; the React app in src/App.jsx calls this instead of any AI
-// provider directly.
+// Uses Google's Gemini API (Interactions endpoint), which has a genuinely
+// free, ongoing tier (no credit card, no expiration — see DEPLOY.md).
+// Keeps the API key on the server; the React app in src/App.jsx calls this
+// instead of any AI provider directly.
 //
 // Set the key in Vercel: Project Settings -> Environment Variables ->
 // GEMINI_API_KEY. Get a free key at https://aistudio.google.com/apikey
 // Never commit it to the repo.
+//
+// NOTE: Google retired the older generateContent endpoint for new API keys
+// (Aug 2026) in favor of the Interactions API — this file was updated to
+// match. If you see 404s again in the future, check
+// https://ai.google.dev/gemini-api/docs/interactions for the current
+// endpoint shape, since Google's APIs move fast.
 
-const MODEL = 'gemini-2.5-flash-lite'; // gemini-2.5-flash was deprecated for new
-// accounts (Aug 2026) — flash-lite is Google's current recommended free-tier
-// model for the generateContent endpoint. If this ever 404s again too, check
-// https://generativelanguage.googleapis.com/v1beta/models?key=YOUR_KEY for
-// the current list of model names your key can access.
+const MODEL = 'gemini-3.5-flash';
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     res.status(405).json({ error: 'Method not allowed' });
@@ -31,28 +34,30 @@ export default async function handler(req, res) {
     return;
   }
 
-  // Basic abuse guard: cap prompt size and token budget regardless of what
-  // the client sends, since this endpoint is public and the free tier has
-  // a daily request cap shared across everyone using this deployment.
+  // Basic abuse guard: cap prompt size regardless of what the client sends,
+  // since this endpoint is public and the free tier has a daily request cap
+  // shared across everyone using this deployment.
   const safePrompt = prompt.slice(0, 4000);
-  const safeMaxTokens = Math.min(Number(maxTokens) || 800, 1200);
 
   try {
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${apiKey}`;
+    const url = 'https://generativelanguage.googleapis.com/v1beta/interactions';
     const response = await fetch(url, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        'x-goog-api-key': apiKey,
+        'Api-Revision': '2026-05-20',
+      },
       body: JSON.stringify({
-        contents: [{ parts: [{ text: safePrompt }] }],
-        generationConfig: { maxOutputTokens: safeMaxTokens },
+        model: MODEL,
+        input: safePrompt,
+        store: false, // stateless — we don't need multi-turn history here
       }),
     });
 
     if (!response.ok) {
       const errText = await response.text();
-      console.error('Gemini API error', response.status, errText); // now visible in Vercel Logs
-      // 429 here means the free tier's daily/per-minute quota was hit —
-      // shared across every visitor to this deployment.
+      console.error('Gemini API error', response.status, errText); // visible in Vercel Logs
       res.status(response.status === 429 ? 429 : 502).json({
         error: response.status === 429 ? 'AI request limit reached, try again in a bit' : 'Upstream AI error',
         detail: errText.slice(0, 300),
@@ -61,11 +66,17 @@ export default async function handler(req, res) {
     }
 
     const data = await response.json();
-    const text = data.candidates?.[0]?.content?.parts?.map((p) => p.text).join('\n').trim() || '';
+    const text = (data.steps || [])
+      .filter((s) => s.type === 'model_output')
+      .flatMap((s) => s.content || [])
+      .filter((c) => c.type === 'text')
+      .map((c) => c.text)
+      .join('\n')
+      .trim();
 
     res.status(200).json({ text });
   } catch (err) {
-    console.error('api/ai handler crashed', err); // now visible in Vercel Logs
+    console.error('api/ai handler crashed', err); // visible in Vercel Logs
     res.status(500).json({ error: 'Request failed', detail: String(err) });
   }
 }
