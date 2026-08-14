@@ -60,13 +60,6 @@ Hard rules, always:
 - Simple vocabulary appropriate to the child's age.
 - Always end on a positive, empowering note.`;
 
-const SEED_BEDTIME_STORIES = [
-  { title: "Hanuman's Great Leap", category: "Hanuman", blurb: "How courage and self-belief helped Hanuman cross the ocean." },
-  { title: "Ganesha and the Moon", category: "Ganesha", blurb: "A story about not laughing at others' mistakes." },
-  { title: "Krishna's Butter Mischief", category: "Krishna", blurb: "A playful tale about honesty and gentle consequences." },
-  { title: "The Thirsty Crow", category: "Panchatantra", blurb: "A clever crow shows that patience and persistence pay off." },
-  { title: "Sita's Garden of Patience", category: "Sita", blurb: "A gentle story about waiting and trusting good things to grow." },
-];
 
 const SEED_SHLOKAS = [
   {
@@ -506,38 +499,7 @@ function PersonalizedStoryScreen() {
   );
 }
 
-/* ---------- Feature: Bedtime Stories ---------- */
 
-function BedtimeStoriesScreen() {
-  const [open, setOpen] = useState(null);
-  return (
-    <div className="max-w-2xl mx-auto grid gap-3">
-      {SEED_BEDTIME_STORIES.map((s) => (
-        <button
-          key={s.title}
-          onClick={() => setOpen(open === s.title ? null : s.title)}
-          className="text-left rounded-2xl bg-white border border-[#EADFC8] px-5 py-4 hover:border-[#1F3B73]/40 transition-colors"
-        >
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "#1F3B7322" }}>
-              🌙
-            </div>
-            <div>
-              <div className="font-bold text-[#1F3B73]" style={{ fontFamily: "'Baloo 2'" }}>{s.title}</div>
-              <div className="text-sm text-[#1F3B73]/70" style={{ fontFamily: "'Nunito'" }}>{s.category} · {s.blurb}</div>
-            </div>
-          </div>
-          {open === s.title && (
-            <div className="mt-3 text-sm text-[#B08D3E] italic" style={{ fontFamily: "'Nunito'" }}>
-              Full story generation connects to the same AI backend as "Ask Why" — this
-              preview shows the catalog entry only.
-            </div>
-          )}
-        </button>
-      ))}
-    </div>
-  );
-}
 
 /* ---------- Feature: Shlokas ---------- */
 
@@ -987,7 +949,6 @@ const SECTIONS = [
       { id: "story", title: "Ask Why", subtitle: 'Ask any "why should I..." question', color: "#FF9933", emoji: "📜" },
       { id: "chat", title: "Ask Anything", subtitle: "Chat about gods, festivals, and stories", color: "#3D9970", emoji: "💬" },
       { id: "personal", title: "My Own Story", subtitle: "Become the hero of a mythology tale", color: "#E94F80", emoji: "⭐" },
-      { id: "bedtime", title: "Bedtime Stories", subtitle: "Gentle stories to read together", color: "#1F3B73", emoji: "🌙" },
       { id: "shloka", title: "Shlokas", subtitle: "Learn Sanskrit verses, word by word", color: "#FF9933", emoji: "🕉️" },
     ],
   },
@@ -1090,7 +1051,6 @@ function AppShell() {
             {tab === "story" && <StoryEngineScreen />}
             {tab === "chat" && <ChatbotScreen />}
             {tab === "personal" && <PersonalizedStoryScreen />}
-            {tab === "bedtime" && <BedtimeStoriesScreen />}
             {tab === "shloka" && <ShlokaScreen />}
             {tab === "games" && !game && <GamesHubScreen onOpenGame={setGame} />}
             {tab === "games" && game === "memory" && <MemoryMatchGame />}
