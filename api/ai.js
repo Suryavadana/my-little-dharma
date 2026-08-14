@@ -8,8 +8,11 @@
 // GEMINI_API_KEY. Get a free key at https://aistudio.google.com/apikey
 // Never commit it to the repo.
 
-const MODEL = 'gemini-2.5-flash'; // free-tier model with the highest daily quota
-
+const MODEL = 'gemini-2.5-flash-lite'; // gemini-2.5-flash was deprecated for new
+// accounts (Aug 2026) — flash-lite is Google's current recommended free-tier
+// model for the generateContent endpoint. If this ever 404s again too, check
+// https://generativelanguage.googleapis.com/v1beta/models?key=YOUR_KEY for
+// the current list of model names your key can access.
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     res.status(405).json({ error: 'Method not allowed' });
