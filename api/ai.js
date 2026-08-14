@@ -47,6 +47,7 @@ export default async function handler(req, res) {
 
     if (!response.ok) {
       const errText = await response.text();
+      console.error('Gemini API error', response.status, errText); // now visible in Vercel Logs
       // 429 here means the free tier's daily/per-minute quota was hit —
       // shared across every visitor to this deployment.
       res.status(response.status === 429 ? 429 : 502).json({
@@ -61,6 +62,7 @@ export default async function handler(req, res) {
 
     res.status(200).json({ text });
   } catch (err) {
+    console.error('api/ai handler crashed', err); // now visible in Vercel Logs
     res.status(500).json({ error: 'Request failed', detail: String(err) });
   }
 }
