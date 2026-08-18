@@ -60,7 +60,6 @@ Hard rules, always:
 - Simple vocabulary appropriate to the child's age.
 - Always end on a positive, empowering note.`;
 
-
 const SEED_SHLOKAS = [
   {
     id: "ganesha_shloka", title: "Ganesha Shloka",
@@ -146,6 +145,92 @@ const SEED_SHLOKAS = [
     ],
   },
   {
+    id: "gita_220", title: "Bhagavad Gita 2.20",
+    sanskrit: "न जायते म्रियते वा कदाचिन्नायं भूत्वा भविता वा न भूयः।\nअजो नित्यः शाश्वतोऽयं पुराणो न हन्यते हन्यमाने शरीरे॥",
+    transliteration: "Na Jaayate Mriyate Vaa Kadaachit Naayam Bhootvaa Bhavitaa Vaa Na Bhooyah, Ajo Nityah Shaashwato'yam Puraano Na Hanyate Hanyamaane Shareere",
+    meaning: "The true self is never born and never dies. It is unborn, eternal, and everlasting — it is not destroyed even when the body is.",
+    words: [
+      ["Na Jaayate Mriyate Vaa Kadaachit", "it is never born and never dies"],
+      ["Naayam Bhootvaa Bhavitaa Vaa Na Bhooyah", "it does not come into being or stop being"],
+      ["Ajo Nityah Shaashwato'yam Puraanah", "it is unborn, eternal, everlasting, ancient"],
+      ["Na Hanyate Hanyamaane Shareere", "it is not destroyed when the body is destroyed"],
+    ],
+  },
+  {
+    id: "gita_214", title: "Bhagavad Gita 2.14",
+    sanskrit: "मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः।\nआगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत॥",
+    transliteration: "Maatraa-sparshaastu Kaunteya Sheetoshna-sukha-duhkha-daah, Aagamaapaayino'nityaas Taanstitikshasva Bhaarata",
+    meaning: "Things like heat and cold, joy and sorrow, come from our senses meeting the world — they come and go, they never last. Learn to stay steady through them.",
+    words: [
+      ["Maatraa-sparshaastu", "the contact of the senses with the world"],
+      ["Sheetoshna-sukha-duhkha-daah", "gives rise to heat/cold, joy/sorrow"],
+      ["Aagamaapaayino'nityaah", "these come and go, they are not permanent"],
+      ["Taanstitikshasva", "learn to endure them steadily"],
+    ],
+  },
+  {
+    id: "gita_47_8", title: "Bhagavad Gita 4.7–4.8",
+    sanskrit: "यदा यदा हि धर्मस्य ग्लानिर्भवति भारत।\nअभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम्॥\nपरित्राणाय साधूनां विनाशाय च दुष्कृताम्।\nधर्मसंस्थापनार्थाय सम्भवामि युगे युगे॥",
+    transliteration: "Yadaa Yadaa Hi Dharmasya Glaanir Bhavati Bhaarata, Abhyutthaanam Adharmasya Tadaatmaanam Srijaamyaham, Paritraanaaya Saadhoonaam Vinaashaaya Cha Dushkritaam, Dharma-samsthaapanaarthaaya Sambhavaami Yuge Yuge",
+    meaning: "Whenever goodness declines and wrongdoing rises, I appear, age after age — to protect those who do right, to stop those who do wrong, and to restore balance and goodness in the world.",
+    words: [
+      ["Yadaa Yadaa Hi Dharmasya Glaanir Bhavati", "whenever goodness/righteousness declines"],
+      ["Abhyutthaanam Adharmasya", "and wrongdoing rises up"],
+      ["Tadaatmaanam Srijaamyaham", "then I take birth/appear"],
+      ["Paritraanaaya Saadhoonaam", "to protect those who do good"],
+      ["Vinaashaaya Cha Dushkritaam", "and to stop those who do wrong"],
+      ["Dharma-samsthaapanaarthaaya Sambhavaami Yuge Yuge", "to restore goodness, age after age"],
+    ],
+  },
+  {
+    id: "gita_65", title: "Bhagavad Gita 6.5",
+    sanskrit: "उद्धरेदात्मनात्मानं नात्मानमवसादयेत्।\nआत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः॥",
+    transliteration: "Uddhared Aatmanaatmaanam Naatmaanam Avasaadayet, Aatmaiva Hyaatmano Bandhur Aatmaiva Ripur Aatmanah",
+    meaning: "Lift yourself up through your own effort — don't let yourself down. You are your own best friend, and you can also be your own worst enemy.",
+    words: [
+      ["Uddhared Aatmanaatmaanam", "lift yourself up by your own effort"],
+      ["Naatmaanam Avasaadayet", "do not let yourself down"],
+      ["Aatmaiva Hyaatmano Bandhuh", "the self is indeed its own friend"],
+      ["Aatmaiva Ripur Aatmanah", "and the self can be its own enemy"],
+    ],
+  },
+  {
+    id: "gita_321", title: "Bhagavad Gita 3.21",
+    sanskrit: "यद्यदाचरति श्रेष्ठस्तत्तदेवेतरो जनः।\nस यत्प्रमाणं कुरुते लोकस्तदनुवर्तते॥",
+    transliteration: "Yad Yad Aacharati Shreshthas Tat Tadeva Itaro Janah, Sa Yat Pramaanam Kurute Lokas Tad Anuvartate",
+    meaning: "Whatever a respected person does, others tend to follow. Whatever example they set, the world follows it too.",
+    words: [
+      ["Yad Yad Aacharati Shreshthah", "whatever a great/respected person does"],
+      ["Tat Tadeva Itaro Janah", "ordinary people do the same"],
+      ["Sa Yat Pramaanam Kurute", "whatever standard they set"],
+      ["Lokas Tad Anuvartate", "the world follows it"],
+    ],
+  },
+  {
+    id: "gita_635", title: "Bhagavad Gita 6.35",
+    sanskrit: "असंशयं महाबाहो मनो दुर्निग्रहं चलम्।\nअभ्यासेन तु कौन्तेय वैराग्येण च गृह्यते॥",
+    transliteration: "Asamshayam Mahaabaaho Mano Durnigraham Chalam, Abhyaasena Tu Kaunteya Vairaagyena Cha Grihyate",
+    meaning: "It's true — the mind is restless and hard to control. But with steady practice, over time, it can be mastered.",
+    words: [
+      ["Asamshayam", "without doubt, it's true"],
+      ["Mano Durnigraham Chalam", "the mind is hard to control and restless"],
+      ["Abhyaasena Tu", "but through steady practice"],
+      ["Vairaagyena Cha Grihyate", "and with patience, it can be mastered"],
+    ],
+  },
+  {
+    id: "gita_1866", title: "Bhagavad Gita 18.66",
+    sanskrit: "सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज।\nअहं त्वां सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः॥",
+    transliteration: "Sarva-dharmaan Parityajya Maamekam Sharanam Vraja, Aham Twaam Sarva-paapebhyo Mokshayishyaami Maa Shuchah",
+    meaning: "Let go of your worries and place your trust in me completely — I will take care of you. Don't be afraid.",
+    words: [
+      ["Sarva-dharmaan Parityajya", "letting go of all your worries/burdens"],
+      ["Maamekam Sharanam Vraja", "come to me for shelter and trust"],
+      ["Aham Twaam Sarva-paapebhyo Mokshayishyaami", "I will free you and take care of you"],
+      ["Maa Shuchah", "do not be afraid or sad"],
+    ],
+  },
+  {
     id: "udyamena_subhashita", title: "On Hard Work (Subhashita)",
     sanskrit: "उद्यमेन हि सिध्यन्ति कार्याणि न मनोरथैः।\nन हि सुप्तस्य सिंहस्य प्रविशन्ति मुखे मृगाः॥",
     transliteration: "Udyamena Hi Sidhyanti Kaaryaani Na Manorathaih, Na Hi Suptasya Simhasya Pravishanti Mukhe Mrigaah",
@@ -155,6 +240,75 @@ const SEED_SHLOKAS = [
       ["Na Manorathaih", "not merely by wishing for it"],
       ["Na Hi Suptasya Simhasya", "even a sleeping lion"],
       ["Pravishanti Mukhe Mrigaah", "does not have deer walk into its mouth (nothing comes without trying)"],
+    ],
+  },
+  {
+    id: "twameva_mata", title: "Twameva Mata (Universal Prayer)",
+    sanskrit: "त्वमेव माता च पिता त्वमेव।\nत्वमेव बन्धुश्च सखा त्वमेव।\nत्वमेव विद्या द्रविणं त्वमेव।\nत्वमेव सर्वं मम देव देव॥",
+    transliteration: "Twameva Mata Cha Pita Twameva, Twameva Bandhushcha Sakha Twameva, Twameva Vidya Dravinam Twameva, Twameva Sarvam Mama Deva Deva",
+    meaning: "You alone are my mother and father, you alone are my relative and friend, you alone are my knowledge and wealth — you alone are everything to me.",
+    words: [
+      ["Twameva Mata Cha Pita", "you alone are my mother and father"],
+      ["Twameva Bandhushcha Sakha", "you alone are my relative and friend"],
+      ["Twameva Vidya Dravinam", "you alone are my knowledge and wealth"],
+      ["Twameva Sarvam Mama Deva Deva", "you alone are everything to me"],
+    ],
+  },
+  {
+    id: "karagre_vasate", title: "Morning Hand Prayer",
+    sanskrit: "कराग्रे वसते लक्ष्मीः करमध्ये सरस्वती।\nकरमूले तु गोविन्दः प्रभाते करदर्शनम्॥",
+    transliteration: "Karagre Vasate Lakshmi, Karamadhye Saraswati, Karamoole Tu Govindah, Prabhaate Kara Darshanam",
+    meaning: "At my fingertips lives wealth, at the center of my palm lives knowledge, and at the base of my hand lives Govinda — so I look at my hands each morning with gratitude for all I can do.",
+    words: [
+      ["Karagre Vasate Lakshmi", "at the fingertips lives the goddess of wealth"],
+      ["Karamadhye Saraswati", "at the center of the palm lives the goddess of knowledge"],
+      ["Karamoole Tu Govindah", "at the base of the hand lives Govinda (Krishna)"],
+      ["Prabhaate Kara Darshanam", "so each morning I look at my hands with gratitude"],
+    ],
+  },
+  {
+    id: "saha_naavavatu", title: "Prayer for Learning Together",
+    sanskrit: "ॐ सह नाववतु। सह नौ भुनक्तु। सह वीर्यं करवावहै।\nतेजस्विनावधीतमस्तु मा विद्विषावहै॥",
+    transliteration: "Om Saha Naavavatu, Saha Nau Bhunaktu, Saha Veeryam Karavaavahai, Tejasvi Naavadheetamastu Maa Vidvishaavahai",
+    meaning: "May we be protected together, may we be nourished together, may we work together with energy, may our learning shine, and may we never hate one another.",
+    words: [
+      ["Saha Naavavatu", "may we be protected together"],
+      ["Saha Nau Bhunaktu", "may we be nourished together"],
+      ["Saha Veeryam Karavaavahai", "may we work together with energy and courage"],
+      ["Tejasvi Naavadheetamastu", "may our learning be brilliant"],
+      ["Maa Vidvishaavahai", "may we never hate each other"],
+    ],
+  },
+  {
+    id: "ahimsa_paramo", title: "Ahimsa Paramo Dharmah",
+    sanskrit: "अहिंसा परमो धर्मः।",
+    transliteration: "Ahimsa Paramo Dharmah",
+    meaning: "Non-violence — not hurting others, in action or in words — is the highest value of all.",
+    words: [
+      ["Ahimsa", "non-violence, not hurting others"],
+      ["Paramo Dharmah", "the highest duty or value"],
+    ],
+  },
+  {
+    id: "vasudhaiva_kutumbakam", title: "Vasudhaiva Kutumbakam",
+    sanskrit: "अयं निजः परोवेति गणना लघुचेतसाम्।\nउदारचरितानां तु वसुधैव कुटुम्बकम्॥",
+    transliteration: "Ayam Nijah Paro Veti Ganana Laghuchetasaam, Udaracharitaanaam Tu Vasudhaiva Kutumbakam",
+    meaning: "\"This is mine, this belongs to someone else\" — that kind of thinking is small-minded. To a generous heart, the whole world is one family.",
+    words: [
+      ["Ayam Nijah Paro Veti", "\"this is mine, this is someone else's\""],
+      ["Ganana Laghuchetasaam", "such small-minded thinking"],
+      ["Udaracharitaanaam Tu", "but to those with generous, broad hearts"],
+      ["Vasudhaiva Kutumbakam", "the whole world is one family"],
+    ],
+  },
+  {
+    id: "satyameva_jayate", title: "Satyameva Jayate",
+    sanskrit: "सत्यमेव जयते नानृतम्।",
+    transliteration: "Satyameva Jayate Naanritam",
+    meaning: "Truth alone triumphs, never falsehood. (This line is India's national motto, from the ancient Mundaka Upanishad.)",
+    words: [
+      ["Satyameva Jayate", "truth alone triumphs"],
+      ["Na Anritam", "never falsehood"],
     ],
   },
 ];
@@ -178,6 +332,53 @@ const QUIZ_SETS = {
 };
 
 const MEMORY_CHARACTERS = ["🐒", "🦚", "🐘", "🏹", "🪷", "🐄"];
+
+// Full pre-written bedtime stories — real content, not AI-generated on
+// demand. A real content library needs stories that exist whether or not
+// the AI backend is reachable; these are original retellings of well-known
+// tales and traditional parables.
+const SEED_BEDTIME_STORIES = [
+  {
+    id: "hanuman_leap", title: "Hanuman's Great Leap", category: "Hanuman", emoji: "🐒",
+    body: "Rama needed to find Sita, who had been taken far across the ocean to the island of Lanka. The ocean was wide — so wide that no one believed anyone could cross it. One by one, the monkey warriors tried to guess how far they could leap. Some could jump ten miles. Some could jump a hundred. But the ocean was much wider than that.\n\nThen an old bear named Jambavan turned to Hanuman, who was sitting quietly at the back, not boasting like the others. \"Hanuman,\" he said, \"you have forgotten your own strength. As a child, you once leapt toward the sun itself, thinking it was a fruit! You can do this.\"\n\nHanuman stood up. He had doubted himself, but now he remembered who he was. He grew larger and larger, until he was as tall as a mountain. Then he crouched down, and with a mighty roar, he leapt into the sky and flew clear across the entire ocean, all the way to Lanka.",
+    moral: "You are often stronger and more capable than you believe. Sometimes you just need someone to remind you.",
+  },
+  {
+    id: "ganesha_moon", title: "Ganesha and the Moon", category: "Ganesha", emoji: "🐘",
+    body: "One night, Ganesha was riding home on his little mouse, his belly full after a wonderful feast. As they went along a bumpy path, the mouse stumbled over a snake, and Ganesha tumbled right off and landed on the ground with a soft thud — his round belly bouncing as he fell.\n\nUp in the sky, the Moon saw this and could not stop laughing. He laughed and laughed, pointing at Ganesha rolling in the dirt.\n\nGanesha did not get angry easily, but being laughed at while he was down did not feel kind at all. \"Since you find it so funny to laugh at others when they've fallen,\" Ganesha said, \"from now on, you will sometimes disappear from the sky completely, so that no one can even see you.\"\n\nThat is why, even today, the moon changes each night — sometimes full and bright, and sometimes gone completely from the sky.",
+    moral: "It's never kind to laugh at someone else's accident or mistake. Everyone stumbles sometimes.",
+  },
+  {
+    id: "krishna_butter", title: "Krishna's Butter Mischief", category: "Krishna", emoji: "🧈",
+    body: "Little Krishna loved butter more than anything. His mother, Yashoda, kept the butter pot high up on a shelf, but that never stopped him. He would climb on stools, stack pots into towers, and even ask his friends to make a human ladder — all to reach that butter pot.\n\nOne day, Yashoda caught him with butter all over his hands and face, and a little bit smeared on his friend's nose too. \"Krishna!\" she said, trying to look stern but almost smiling. \"Did you take the butter again?\"\n\nKrishna looked down at his buttery hands, then up at his mother, and simply said, \"Yes, Mother. I did.\" He didn't try to hide it or blame his friends.\n\nYashoda couldn't stay angry. She gave him a gentle tap on the hand and a big hug instead. \"Next time, just ask me,\" she said, \"and I'll give you a proper share.\"",
+    moral: "Owning up to what you did, even when you might get in trouble, is always the better path — and it usually turns out gentler than you expect.",
+  },
+  {
+    id: "thirsty_crow", title: "The Thirsty Crow", category: "Panchatantra", emoji: "🐦",
+    body: "One hot summer day, a crow flew for miles searching for water. Finally, she spotted a tall clay pot sitting in a garden. She flew down eagerly, but when she looked inside, her heart sank — the water was only at the very bottom, far too low for her beak to reach.\n\nShe tried tipping the pot over, but it was too heavy. She thought about giving up and flying away thirsty. But then she had an idea.\n\nOne by one, she picked up small pebbles lying nearby and dropped them into the pot — plink, plink, plink. Slowly, the water level began to rise as the pebbles took up space at the bottom. She kept going, pebble after pebble, patiently, until finally the water rose high enough for her to take a long, cool drink.",
+    moral: "When a problem seems impossible, patience and clever, steady effort can often solve what brute force cannot.",
+  },
+  {
+    id: "sita_garden", title: "Sita's Garden of Patience", category: "Sita", emoji: "🌱",
+    body: "While Sita lived in the forest with Rama and Lakshmana, she decided to plant a small garden outside their cottage. She planted tiny seeds — flowers, herbs, and a young mango sapling — and watered them every single day.\n\nAt first, nothing seemed to happen. Days passed with no sprouts at all. \"Maybe I planted them wrong,\" she wondered. But she kept watering them anyway, gently, every morning.\n\nSlowly, tiny green shoots began to peek through the soil. Weeks later, flowers bloomed in bright colors, and herbs grew fragrant and full. The mango sapling, though still small, stood a little taller each week.\n\n\"Nothing worth growing happens all at once,\" Sita told Lakshmana one evening, looking at her garden with a quiet smile. \"You just have to keep caring for it, even on the days it looks like nothing is happening.\"",
+    moral: "Good things often take time to grow. Patience and steady care matter more than instant results.",
+  },
+  {
+    id: "lion_mouse", title: "The Lion and the Mouse", category: "Panchatantra", emoji: "🦁",
+    body: "A mighty lion was sleeping in the shade of a tree when a tiny mouse accidentally scurried across his paw and woke him up. Furious, the lion grabbed the mouse in his huge paw, ready to eat him in one bite.\n\n\"Please, great lion, let me go!\" squeaked the mouse. \"I promise, one day I will help you back.\"\n\nThe lion laughed at the idea that a creature so small could ever help someone so big and strong. But he was in a good mood, so he let the little mouse scurry away free.\n\nMany weeks later, the lion got tangled in a hunter's net, roaring and struggling but unable to break free. The little mouse heard his roars from far away and came running. Quietly and quickly, she gnawed through the ropes of the net, thread by thread, until the lion was finally free.\n\n\"I told you,\" said the mouse with a smile, \"that even someone small could help someone big.\"",
+    moral: "Never think an act of kindness is too small to matter, and never assume someone is too small to help you one day.",
+  },
+  {
+    id: "ganesha_race", title: "Ganesha's Race Around the World", category: "Ganesha", emoji: "🌍",
+    body: "One day, Ganesha's brother Kartikeya challenged him to a race: whoever could circle the entire world three times first would win a special golden mango. Kartikeya jumped onto his fast peacock and zoomed off immediately, certain he would win easily.\n\nGanesha looked at his own ride — a small, slow mouse — and knew he could never out-fly a peacock. So instead of racing around the world, he did something different. He walked in a slow circle around his mother and father, Parvati and Shiva, three times, and then sat down calmly.\n\n\"What are you doing?\" everyone asked. \"You haven't even left!\"\n\nGanesha smiled. \"My parents mean more to me than the whole world. Circling them three times with love is the same as circling the world three times.\"\n\nEveryone agreed Ganesha's wisdom had won the race, even without moving very far at all — and he happily received the golden mango.",
+    moral: "Cleverness and love can matter more than speed or strength — and there's nothing more valuable than honoring your parents.",
+  },
+  {
+    id: "elephant_blind_men", title: "The Elephant and the Six Blind Men", category: "Wisdom Tales", emoji: "🐘",
+    body: "Six blind men had never encountered an elephant before, so one day they went to feel one and find out what it was like. Each man touched a different part of the elephant.\n\nThe one who touched the ear said, \"An elephant is like a big fan!\" The one who touched the leg said, \"No, it's like a sturdy tree trunk!\" The one who touched the tail said, \"You're both wrong — it's like a thin rope!\" The one who touched the trunk said, \"It's like a thick snake!\" Each man was so sure he was completely right that they began to argue loudly.\n\nA wise traveler passing by heard the commotion and smiled. \"You are each right about the part you touched,\" he said, \"but none of you has felt the whole elephant. Maybe if you listened to each other instead of arguing, you'd understand the whole picture together.\"\n\nThe six men sat down, shared what each had felt, and for the first time, began to understand what an elephant truly was.",
+    moral: "Everyone sees only part of the truth from where they stand. Listening to others' perspectives helps us understand the whole picture.",
+  },
+];
 
 /* ---------- Shared UI bits ---------- */
 
@@ -274,6 +475,10 @@ function shade(hex) {
   return `rgb(${r},${g},${b})`;
 }
 
+function shuffleArray(arr) {
+  return [...arr].map((v) => ({ v, k: Math.random() })).sort((a, b) => a.k - b.k).map((x) => x.v);
+}
+
 function LoadingLamp({ label }) {
   return (
     <div className="flex items-center gap-3 text-[#1F3B73] mt-4" style={{ fontFamily: "'Nunito'" }}>
@@ -284,9 +489,43 @@ function LoadingLamp({ label }) {
 }
 
 /* ---------- Shared stats (feeds Parent Dashboard) ----------
-   In-memory only for this preview (artifacts can't use browser storage) —
-   the shipped app persists this via ProgressService / SharedPreferences,
-   with a Phase 2 note to migrate to Firestore for cross-device sync. */
+   Persisted to localStorage so progress survives refresh and closing the
+   tab — appropriate here because this is a real deployed site (not a
+   Claude artifact), and each friend/family member has their own device, so
+   storing progress locally per-browser is exactly the right model: no
+   accounts, no shared server-side data, nothing to sync across people. */
+
+const STORAGE_KEY = "mld_progress_v1";
+
+function loadStats() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return null;
+    return JSON.parse(raw);
+  } catch {
+    return null; // corrupted or blocked storage — fall back to a fresh start
+  }
+}
+
+function saveStats(stats) {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(stats));
+  } catch {
+    // Storage full or blocked (e.g. private browsing) — fail silently;
+    // the app still works, it just won't persist this session.
+  }
+}
+
+const defaultStats = {
+  storiesCompleted: 0,
+  questionsAsked: 0,
+  shlokasLearned: 0,
+  learnedShlokaIds: [],
+  kindnessScore: 0,
+  gratitudeStreak: 0,
+  gratitudeDates: [],
+  gratitudeEntries: [], // [{ date, good, helpedMe, iHelped, madeMeSmile }]
+};
 
 const StatsContext = createContext(null);
 function useStats() {
@@ -294,28 +533,47 @@ function useStats() {
 }
 
 function StatsProvider({ children }) {
-  const [stats, setStats] = useState({
-    storiesCompleted: 0,
-    questionsAsked: 0,
-    shlokasLearned: 0,
-    kindnessScore: 0,
-    gratitudeStreak: 0,
-    gratitudeDates: [],
-  });
+  const [stats, setStats] = useState(() => ({ ...defaultStats, ...(loadStats() || {}) }));
+
+  useEffect(() => {
+    saveStats(stats);
+  }, [stats]);
 
   const bump = (key, by = 1) => setStats((s) => ({ ...s, [key]: s[key] + by }));
 
-  const recordGratitudeToday = () => {
+  const recordGratitudeToday = (entry) => {
     const today = new Date().toDateString();
     setStats((s) => {
       if (s.gratitudeDates.includes(today)) return s;
       const dates = [...s.gratitudeDates, today];
-      return { ...s, gratitudeDates: dates, gratitudeStreak: s.gratitudeStreak + 1, kindnessScore: s.kindnessScore + 3 };
+      const entries = entry ? [{ date: today, ...entry }, ...s.gratitudeEntries] : s.gratitudeEntries;
+      return {
+        ...s,
+        gratitudeDates: dates,
+        gratitudeEntries: entries,
+        gratitudeStreak: s.gratitudeStreak + 1,
+        kindnessScore: s.kindnessScore + 3,
+      };
     });
   };
 
+  const markShlokaLearned = (id) => {
+    setStats((s) => {
+      if (s.learnedShlokaIds.includes(id)) return s;
+      return {
+        ...s,
+        learnedShlokaIds: [...s.learnedShlokaIds, id],
+        shlokasLearned: s.shlokasLearned + 1,
+      };
+    });
+  };
+
+  const resetProgress = () => {
+    setStats({ ...defaultStats });
+  };
+
   return (
-    <StatsContext.Provider value={{ stats, bump, recordGratitudeToday }}>
+    <StatsContext.Provider value={{ stats, bump, recordGratitudeToday, markShlokaLearned, resetProgress }}>
       {children}
     </StatsContext.Provider>
   );
@@ -499,25 +757,111 @@ function PersonalizedStoryScreen() {
   );
 }
 
+/* ---------- Feature: Bedtime Stories ---------- */
 
+function BedtimeStoriesScreen() {
+  const [open, setOpen] = useState(null);
+  return (
+    <div className="max-w-2xl mx-auto grid gap-3">
+      {SEED_BEDTIME_STORIES.map((s) => (
+        <div key={s.id} className="rounded-2xl bg-white border border-[#EADFC8] overflow-hidden">
+          <button
+            onClick={() => setOpen(open === s.id ? null : s.id)}
+            className="w-full text-left px-5 py-4 flex items-center gap-3 hover:bg-[#1F3B73]/5 transition-colors"
+          >
+            <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-xl" style={{ background: "#1F3B7322" }}>
+              {s.emoji}
+            </div>
+            <div className="flex-1">
+              <div className="font-bold text-[#1F3B73]" style={{ fontFamily: "'Baloo 2'" }}>{s.title}</div>
+              <div className="text-sm text-[#1F3B73]/70" style={{ fontFamily: "'Nunito'" }}>{s.category}</div>
+            </div>
+            <div className="text-[#1F3B73]/40">{open === s.id ? "▲" : "▼"}</div>
+          </button>
+          {open === s.id && (
+            <div className="px-5 pb-5" style={{ fontFamily: "'Nunito'" }}>
+              {s.body.split("\n\n").map((para, i) => (
+                <p key={i} className="text-[#1F3B73] leading-relaxed mb-3" style={{ fontSize: "16px" }}>{para}</p>
+              ))}
+              <Pill label="Moral" text={s.moral} color="#3D9970" />
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+}
 
 /* ---------- Feature: Shlokas ---------- */
 
+// Finds a shloka from our curated library by matching the user's request
+// against titles, meanings, and word glosses. Deliberately does NOT ask the
+// AI to invent new Sanskrit text — hallucinated scripture is a real
+// accuracy risk, so the AI is only ever asked to pick from this known list,
+// never to generate new verses.
+function localShlokaMatch(query) {
+  const q = query.toLowerCase().trim();
+  if (!q) return null;
+
+  // Exact or partial title match first.
+  const titleMatch = SEED_SHLOKAS.find((s) => s.title.toLowerCase().includes(q) || q.includes(s.title.toLowerCase()));
+  if (titleMatch) return titleMatch;
+
+  // Otherwise score each shloka by how many of the query's words appear in
+  // its title, meaning, or word-by-word glosses.
+  const queryWords = q.split(/\s+/).filter((w) => w.length > 3); // skip tiny words like "the"
+  if (queryWords.length === 0) return null;
+
+  let best = null;
+  let bestScore = 0;
+  for (const s of SEED_SHLOKAS) {
+    const haystack = [s.title, s.meaning, ...s.words.map(([, m]) => m)].join(" ").toLowerCase();
+    const score = queryWords.filter((w) => haystack.includes(w)).length;
+    if (score > bestScore) {
+      bestScore = score;
+      best = s;
+    }
+  }
+  return bestScore > 0 ? best : null;
+}
+
+async function aiShlokaMatch(query) {
+  const catalog = SEED_SHLOKAS.map((s) => `${s.id}: "${s.title}" — ${s.meaning}`).join("\n");
+  const prompt = `A child is looking for a shloka (Sanskrit verse) in our library. They asked: "${query}"
+
+Here is the full library, each line "id: title — meaning":
+${catalog}
+
+Pick the ONE entry that best matches what they're asking for. Respond with ONLY the id (the part before the colon), nothing else. If truly nothing in the list relates to their request at all, respond with exactly: none`;
+
+  const text = await callAI(prompt, 50);
+  const id = text.trim().toLowerCase();
+  return SEED_SHLOKAS.find((s) => s.id === id) || null;
+}
+
+// Same shloka for everyone on a given calendar day, rotating through the
+// whole library — deterministic (no storage needed) and changes daily.
+function getDailyShloka() {
+  const dayNumber = Math.floor(Date.now() / 86400000); // days since epoch
+  const index = dayNumber % SEED_SHLOKAS.length;
+  return SEED_SHLOKAS[index];
+}
+
 function ShlokaScreen() {
-  const { bump } = useStats();
+  const { stats, markShlokaLearned } = useStats();
   const [open, setOpen] = useState(null);
-  const [learned, setLearned] = useState({});
   const [voiceStatus, setVoiceStatus] = useState("checking"); // "checking" | "hindi" | "none"
   const [speaking, setSpeaking] = useState(null);
   const voiceRef = useRef(null);
+
+  const [query, setQuery] = useState("");
+  const [searching, setSearching] = useState(false);
+  const [notFound, setNotFound] = useState(false);
 
   useEffect(() => {
     if (!window.speechSynthesis) { setVoiceStatus("none"); return; }
     const pickVoice = () => {
       const voices = window.speechSynthesis.getVoices();
-      // Prefer an actual Sanskrit voice (essentially never present), then a
-      // Hindi voice, preferring ones whose name suggests a natural/Google
-      // voice over a generic robotic one.
       const sanskrit = voices.find((v) => v.lang?.toLowerCase().startsWith("sa"));
       const hindiVoices = voices.filter((v) => v.lang?.toLowerCase().startsWith("hi"));
       const bestHindi = hindiVoices.find((v) => /google|natural|premium/i.test(v.name)) || hindiVoices[0];
@@ -529,21 +873,12 @@ function ShlokaScreen() {
     window.speechSynthesis.onvoiceschanged = pickVoice;
   }, []);
 
-  // Speaking one long Devanagari string in a single utterance reads very
-  // poorly — browser TTS engines mumble through the danda (।) breaks. We
-  // split on line breaks and danda punctuation and speak each phrase as its
-  // own utterance with a short pause, which is noticeably clearer. This is
-  // still a generic Hindi voice, not a trained Sanskrit voice, so accuracy
-  // has a real ceiling — see the note below the player.
   const speak = (shloka) => {
     if (!window.speechSynthesis) return;
     window.speechSynthesis.cancel();
     const useHindi = voiceStatus === "hindi";
     const source = useHindi ? shloka.sanskrit : shloka.transliteration;
-    const phrases = source
-      .split(/[।॥\n]+/)
-      .map((p) => p.trim())
-      .filter(Boolean);
+    const phrases = source.split(/[।॥\n]+/).map((p) => p.trim()).filter(Boolean);
 
     setSpeaking(shloka.id);
     let i = 0;
@@ -566,27 +901,92 @@ function ShlokaScreen() {
   };
 
   const markLearned = (id) => {
-    if (learned[id]) return;
-    setLearned((l) => ({ ...l, [id]: true }));
-    bump("shlokasLearned");
+    markShlokaLearned(id);
   };
+
+  const askForShloka = async () => {
+    if (!query.trim()) return;
+    setSearching(true);
+    setNotFound(false);
+    // Try a free, instant local match first; only call the AI if that fails.
+    let match = localShlokaMatch(query);
+    if (!match) {
+      try {
+        match = await aiShlokaMatch(query);
+      } catch {
+        match = null;
+      }
+    }
+    setSearching(false);
+    if (match) {
+      setOpen(match.id);
+      setQuery("");
+      // Scroll the matched card into view.
+      setTimeout(() => {
+        document.getElementById(`shloka-${match.id}`)?.scrollIntoView({ behavior: "smooth", block: "center" });
+      }, 50);
+    } else {
+      setNotFound(true);
+    }
+  };
+
+  const daily = getDailyShloka();
 
   return (
     <div className="max-w-2xl mx-auto grid gap-3">
+      <button
+        onClick={() => { setOpen(daily.id); setTimeout(() => document.getElementById(`shloka-${daily.id}`)?.scrollIntoView({ behavior: "smooth", block: "center" }), 50); }}
+        className="text-left rounded-2xl p-4 flex items-center gap-3"
+        style={{ background: "linear-gradient(135deg, #FF993322, #E94F8022)", border: "1px solid #FF993355" }}
+      >
+        <div className="text-3xl">📅</div>
+        <div className="flex-1">
+          <div className="text-xs font-bold uppercase tracking-wide text-[#B08D3E]">Today's Shloka</div>
+          <div className="font-bold text-[#1F3B73]" style={{ fontFamily: "'Baloo 2'" }}>{daily.title}</div>
+        </div>
+        <div className="text-[#1F3B73]/50">→</div>
+      </button>
+
+      <div className="rounded-2xl bg-white border-2 border-[#EADFC8] p-4">
+        <div className="text-sm font-bold text-[#1F3B73] mb-2" style={{ fontFamily: "'Baloo 2'" }}>
+          Which shloka would you like to learn?
+        </div>
+        <div className="flex gap-2">
+          <input
+            value={query}
+            onChange={(e) => { setQuery(e.target.value); setNotFound(false); }}
+            onKeyDown={(e) => e.key === "Enter" && askForShloka()}
+            placeholder='e.g. "Gayatri Mantra" or "a shloka about courage"'
+            className="flex-1 rounded-xl border-2 border-[#EADFC8] px-4 py-2.5 outline-none focus:border-[#FF9933]"
+            style={{ fontFamily: "'Nunito'" }}
+          />
+          <PrimaryButton onClick={askForShloka} disabled={searching} color="#3D9970">
+            {searching ? "..." : "Find It"}
+          </PrimaryButton>
+        </div>
+        {notFound && (
+          <div className="text-sm text-[#E94F80] mt-2" style={{ fontFamily: "'Nunito'" }}>
+            We don't have one that matches yet — try browsing the list below, or ask for
+            one about truth, courage, kindness, hard work, gratitude, or unity.
+          </div>
+        )}
+      </div>
+
       <div className="text-xs rounded-xl px-4 py-2.5" style={{ background: "#1F3B7314", color: "#1F3B73", fontFamily: "'Nunito'" }}>
         {voiceStatus === "none"
           ? "This browser has no Hindi voice installed, so playback uses an English voice — pronunciation will be rough. Chrome on Android/Windows usually has a built-in Hindi voice; Safari often doesn't."
           : "Playing with the closest available voice (Hindi, not Sanskrit — no browser ships a true Sanskrit voice). For real accuracy, the shipped app should use recordings of a native speaker rather than text-to-speech."}
       </div>
+
       {SEED_SHLOKAS.map((s) => (
-        <div key={s.id} className="rounded-2xl bg-white border border-[#EADFC8] overflow-hidden">
+        <div key={s.id} id={`shloka-${s.id}`} className="rounded-2xl bg-white border border-[#EADFC8] overflow-hidden scroll-mt-4">
           <button onClick={() => setOpen(open === s.id ? null : s.id)} className="w-full text-left px-5 py-4 flex items-center gap-3">
             <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "#FF993322" }}>🕉️</div>
             <div className="flex-1">
               <div className="font-bold text-[#1F3B73]" style={{ fontFamily: "'Baloo 2'" }}>{s.title}</div>
               <div className="text-sm text-[#1F3B73]/70 truncate" style={{ fontFamily: "'Nunito'" }}>{s.transliteration}</div>
             </div>
-            {learned[s.id] && <span className="text-lg">✅</span>}
+            {stats.learnedShlokaIds.includes(s.id) && <span className="text-lg">✅</span>}
           </button>
           {open === s.id && (
             <div className="px-5 pb-5" style={{ fontFamily: "'Nunito'" }}>
@@ -609,7 +1009,7 @@ function ShlokaScreen() {
               </div>
               <div className="mt-4">
                 <PrimaryButton onClick={() => markLearned(s.id)} color="#FF9933">
-                  {learned[s.id] ? "Marked as Learned ✓" : "I've Learned This"}
+                  {stats.learnedShlokaIds.includes(s.id) ? "Marked as Learned ✓" : "I've Learned This"}
                 </PrimaryButton>
               </div>
             </div>
@@ -626,6 +1026,10 @@ function GamesHubScreen({ onOpenGame }) {
   const tiles = [
     { id: "memory", title: "Memory Match", emoji: "🃏", color: "#E94F80" },
     { id: "quiz", title: "Mythology Quiz", emoji: "❓", color: "#3D9970" },
+    { id: "wordsearch", title: "Word Search", emoji: "🔤", color: "#FF9933" },
+    { id: "spotdiff", title: "Spot the Difference", emoji: "🔍", color: "#1F3B73" },
+    { id: "temple", title: "Temple Builder", emoji: "🛕", color: "#8B5CF6" },
+    { id: "hanumanleap", title: "Hanuman's Leap", emoji: "🐒", color: "#3D9970" },
   ];
   return (
     <div className="max-w-2xl mx-auto grid sm:grid-cols-2 gap-4">
@@ -778,6 +1182,540 @@ function QuizGame() {
   );
 }
 
+/* ---------- Game: Word Search ---------- */
+
+const WORD_SEARCH_WORDS = ["RAMA", "SITA", "KRISHNA", "HANUMAN", "GANESHA", "DHARMA", "SHIVA", "GITA"];
+const WORD_SEARCH_SIZE = 12;
+
+function generateWordSearchGrid() {
+  const grid = Array.from({ length: WORD_SEARCH_SIZE }, () => Array(WORD_SEARCH_SIZE).fill(null));
+  const directions = [
+    [0, 1],  // right
+    [1, 0],  // down
+    [1, 1],  // diagonal down-right
+  ];
+  const placements = [];
+
+  for (const word of WORD_SEARCH_WORDS) {
+    let placed = false;
+    for (let attempt = 0; attempt < 100 && !placed; attempt++) {
+      const [dr, dc] = directions[Math.floor(Math.random() * directions.length)];
+      const maxRow = WORD_SEARCH_SIZE - (dr ? word.length : 1);
+      const maxCol = WORD_SEARCH_SIZE - (dc ? word.length : 1);
+      if (maxRow < 0 || maxCol < 0) continue;
+      const row = Math.floor(Math.random() * (maxRow + 1));
+      const col = Math.floor(Math.random() * (maxCol + 1));
+
+      let fits = true;
+      for (let i = 0; i < word.length; i++) {
+        const r = row + dr * i, c = col + dc * i;
+        if (grid[r][c] !== null && grid[r][c] !== word[i]) { fits = false; break; }
+      }
+      if (!fits) continue;
+
+      const cells = [];
+      for (let i = 0; i < word.length; i++) {
+        const r = row + dr * i, c = col + dc * i;
+        grid[r][c] = word[i];
+        cells.push(`${r}-${c}`);
+      }
+      placements.push({ word, cells });
+      placed = true;
+    }
+  }
+
+  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  for (let r = 0; r < WORD_SEARCH_SIZE; r++) {
+    for (let c = 0; c < WORD_SEARCH_SIZE; c++) {
+      if (grid[r][c] === null) grid[r][c] = letters[Math.floor(Math.random() * letters.length)];
+    }
+  }
+  return { grid, placements };
+}
+
+function WordSearchGame() {
+  const { bump } = useStats();
+  const [puzzle, setPuzzle] = useState(generateWordSearchGrid);
+  const [selecting, setSelecting] = useState(false);
+  const [selectedCells, setSelectedCells] = useState([]);
+  const [foundWords, setFoundWords] = useState([]);
+  const [foundCells, setFoundCells] = useState(new Set());
+
+  const newGame = () => {
+    setPuzzle(generateWordSearchGrid());
+    setSelectedCells([]);
+    setFoundWords([]);
+    setFoundCells(new Set());
+  };
+
+  const cellKey = (r, c) => `${r}-${c}`;
+
+  const startSelect = (r, c) => {
+    setSelecting(true);
+    setSelectedCells([cellKey(r, c)]);
+  };
+
+  const dragOver = (r, c) => {
+    if (!selecting) return;
+    const start = selectedCells[0];
+    if (!start) return;
+    const [sr, sc] = start.split("-").map(Number);
+    const dr = Math.sign(r - sr), dc = Math.sign(c - sc);
+    // Only allow straight lines (horizontal, vertical, diagonal)
+    if (dr !== 0 && dc !== 0 && Math.abs(r - sr) !== Math.abs(c - sc)) return;
+    const cells = [];
+    const steps = Math.max(Math.abs(r - sr), Math.abs(c - sc));
+    for (let i = 0; i <= steps; i++) {
+      cells.push(cellKey(sr + dr * i, sc + dc * i));
+    }
+    setSelectedCells(cells);
+  };
+
+  const endSelect = () => {
+    setSelecting(false);
+    const selectedWord = selectedCells.map((k) => {
+      const [r, c] = k.split("-").map(Number);
+      return puzzle.grid[r][c];
+    }).join("");
+    const reversed = selectedWord.split("").reverse().join("");
+
+    const match = puzzle.placements.find(
+      (p) => (p.word === selectedWord || p.word === reversed) && !foundWords.includes(p.word)
+    );
+    if (match) {
+      setFoundWords((f) => [...f, match.word]);
+      setFoundCells((prev) => new Set([...prev, ...match.cells]));
+      if (foundWords.length + 1 === WORD_SEARCH_WORDS.length) {
+        bump("kindnessScore", 8);
+      }
+    }
+    setSelectedCells([]);
+  };
+
+  const allFound = foundWords.length === WORD_SEARCH_WORDS.length;
+
+  return (
+    <div className="max-w-lg mx-auto">
+      <div className="flex justify-between items-center mb-3">
+        <div className="text-sm text-[#1F3B73]/70" style={{ fontFamily: "'Nunito'" }}>
+          Found {foundWords.length} / {WORD_SEARCH_WORDS.length}
+        </div>
+        <button onClick={newGame} className="text-sm font-semibold text-[#1F3B73]" style={{ fontFamily: "'Baloo 2'" }}>↻ New Puzzle</button>
+      </div>
+      {allFound && <div className="text-center mb-3 font-bold text-[#3D9970]" style={{ fontFamily: "'Baloo 2'" }}>You found them all! 🎉</div>}
+
+      <div
+        className="grid select-none touch-none"
+        style={{ gridTemplateColumns: `repeat(${WORD_SEARCH_SIZE}, minmax(0, 1fr))`, gap: "2px" }}
+        onMouseLeave={() => { if (selecting) endSelect(); }}
+      >
+        {puzzle.grid.map((row, r) =>
+          row.map((letter, c) => {
+            const key = cellKey(r, c);
+            const isSelected = selectedCells.includes(key);
+            const isFound = foundCells.has(key);
+            return (
+              <div
+                key={key}
+                onMouseDown={() => startSelect(r, c)}
+                onMouseEnter={() => dragOver(r, c)}
+                onMouseUp={endSelect}
+                onTouchStart={() => startSelect(r, c)}
+                className="aspect-square flex items-center justify-center text-xs font-bold rounded cursor-pointer"
+                style={{
+                  background: isFound ? "#3D997055" : isSelected ? "#FF993355" : "#FFFDF8",
+                  border: "1px solid #EADFC8",
+                  color: "#1F3B73",
+                  fontFamily: "'Nunito'",
+                }}
+              >
+                {letter}
+              </div>
+            );
+          })
+        )}
+      </div>
+
+      <div className="flex flex-wrap gap-2 mt-4 justify-center">
+        {WORD_SEARCH_WORDS.map((w) => (
+          <span
+            key={w}
+            className="text-xs px-2.5 py-1 rounded-full font-semibold"
+            style={{
+              background: foundWords.includes(w) ? "#3D997040" : "#1F3B7314",
+              color: foundWords.includes(w) ? "#3D9970" : "#1F3B73",
+              textDecoration: foundWords.includes(w) ? "line-through" : "none",
+            }}
+          >
+            {w}
+          </span>
+        ))}
+      </div>
+      <div className="text-xs text-center text-[#1F3B73]/50 mt-3" style={{ fontFamily: "'Nunito'" }}>
+        Click and drag across letters to find each word.
+      </div>
+    </div>
+  );
+}
+
+/* ---------- Game: Spot the Difference ---------- */
+
+const SPOT_DIFF_ICONS = ["🪷", "🕉️", "🐒", "🦚", "🐘", "🏹", "🐄", "🌙", "⭐", "🔔", "🪈", "🎨"];
+const SPOT_DIFF_GRID = 6; // 6x6
+
+function generateSpotDiffBoards() {
+  const cellCount = SPOT_DIFF_GRID * SPOT_DIFF_GRID;
+  const base = Array.from({ length: cellCount }, () => SPOT_DIFF_ICONS[Math.floor(Math.random() * SPOT_DIFF_ICONS.length)]);
+  const modified = [...base];
+
+  const diffCount = 4;
+  const diffIndices = new Set();
+  while (diffIndices.size < diffCount) {
+    diffIndices.add(Math.floor(Math.random() * cellCount));
+  }
+  diffIndices.forEach((i) => {
+    let newIcon;
+    do { newIcon = SPOT_DIFF_ICONS[Math.floor(Math.random() * SPOT_DIFF_ICONS.length)]; }
+    while (newIcon === base[i]);
+    modified[i] = newIcon;
+  });
+
+  return { base, modified, diffIndices };
+}
+
+function SpotDifferenceGame() {
+  const { bump } = useStats();
+  const [puzzle, setPuzzle] = useState(generateSpotDiffBoards);
+  const [found, setFound] = useState(new Set());
+  const [wrongFlash, setWrongFlash] = useState(null);
+
+  const newGame = () => {
+    setPuzzle(generateSpotDiffBoards());
+    setFound(new Set());
+  };
+
+  const tapModified = (i) => {
+    if (found.has(i)) return;
+    if (puzzle.diffIndices.has(i)) {
+      const next = new Set([...found, i]);
+      setFound(next);
+      if (next.size === puzzle.diffIndices.size) bump("kindnessScore", 6);
+    } else {
+      setWrongFlash(i);
+      setTimeout(() => setWrongFlash(null), 400);
+    }
+  };
+
+  const allFound = found.size === puzzle.diffIndices.size;
+
+  const renderBoard = (icons, interactive) => (
+    <div className="grid gap-1.5" style={{ gridTemplateColumns: `repeat(${SPOT_DIFF_GRID}, minmax(0, 1fr))` }}>
+      {icons.map((icon, i) => (
+        <div
+          key={i}
+          onClick={interactive ? () => tapModified(i) : undefined}
+          className="aspect-square rounded-lg flex items-center justify-center text-xl"
+          style={{
+            background: interactive && found.has(i) ? "#3D997055" : interactive && wrongFlash === i ? "#E94F8055" : "#FFFDF8",
+            border: interactive && found.has(i) ? "2px solid #3D9970" : "1px solid #EADFC8",
+            cursor: interactive ? "pointer" : "default",
+          }}
+        >
+          {icon}
+        </div>
+      ))}
+    </div>
+  );
+
+  return (
+    <div className="max-w-lg mx-auto">
+      <div className="flex justify-between items-center mb-3">
+        <div className="text-sm text-[#1F3B73]/70" style={{ fontFamily: "'Nunito'" }}>
+          Found {found.size} / {puzzle.diffIndices.size}
+        </div>
+        <button onClick={newGame} className="text-sm font-semibold text-[#1F3B73]" style={{ fontFamily: "'Baloo 2'" }}>↻ New Puzzle</button>
+      </div>
+      {allFound && <div className="text-center mb-3 font-bold text-[#3D9970]" style={{ fontFamily: "'Baloo 2'" }}>You spotted them all! 🎉</div>}
+      <div className="grid grid-cols-2 gap-3">
+        <div>
+          <div className="text-xs text-center text-[#1F3B73]/60 mb-1">Original</div>
+          {renderBoard(puzzle.base, false)}
+        </div>
+        <div>
+          <div className="text-xs text-center text-[#1F3B73]/60 mb-1">Find the differences here</div>
+          {renderBoard(puzzle.modified, true)}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ---------- Game: Temple Builder ---------- */
+
+const TEMPLE_PARTS = [
+  { id: "foundation", label: "Foundation", emoji: "🟫", height: 22,
+    fact: "Every temple starts with a strong, wide foundation, dug deep into the earth to hold everything above it steady." },
+  { id: "steps", label: "Steps", emoji: "🪜", height: 16,
+    fact: "Steps lead worshippers upward, out of the everyday world and into the sacred space." },
+  { id: "pillars", label: "Pillars", emoji: "🏛️", height: 42,
+    fact: "Carved pillars hold up the temple's roof and are often decorated with stories from the epics." },
+  { id: "walls", label: "Walls", emoji: "🧱", height: 30,
+    fact: "The walls enclose the garbhagriha — the quiet inner sanctum where the deity resides." },
+  { id: "dome", label: "Dome (Shikhara)", emoji: "🔺", height: 52,
+    fact: "The tower, or shikhara, rises upward like a mountain peak, said to reach toward the heavens." },
+  { id: "flag", label: "Flag (Dhwaja)", emoji: "🚩", height: 20,
+    fact: "A flag or finial crowns the very top of the temple, completing it." },
+];
+
+function TempleBuilderGame() {
+  const { bump } = useStats();
+  const [built, setBuilt] = useState([]);
+  const [options, setOptions] = useState(() => shuffleArray(TEMPLE_PARTS.map((p) => p.id)));
+  const [message, setMessage] = useState(null);
+  const [wrongId, setWrongId] = useState(null);
+
+  const nextNeeded = TEMPLE_PARTS[built.length];
+  const complete = built.length === TEMPLE_PARTS.length;
+
+  const tapPart = (id) => {
+    if (complete) return;
+    if (id === nextNeeded.id) {
+      setBuilt((b) => [...b, id]);
+      setMessage(nextNeeded.fact);
+      if (built.length + 1 === TEMPLE_PARTS.length) bump("kindnessScore", 8);
+    } else {
+      setWrongId(id);
+      setTimeout(() => setWrongId(null), 400);
+    }
+  };
+
+  const newGame = () => {
+    setBuilt([]);
+    setOptions(shuffleArray(TEMPLE_PARTS.map((p) => p.id)));
+    setMessage(null);
+  };
+
+  return (
+    <div className="max-w-md mx-auto">
+      <div className="flex justify-between items-center mb-3">
+        <div className="text-sm text-[#1F3B73]/70" style={{ fontFamily: "'Nunito'" }}>Build from the ground up</div>
+        <button onClick={newGame} className="text-sm font-semibold text-[#1F3B73]" style={{ fontFamily: "'Baloo 2'" }}>↻ Restart</button>
+      </div>
+
+      <div
+        className="rounded-2xl border border-[#EADFC8] flex flex-col-reverse items-center justify-start p-3"
+        style={{ height: 260, background: "linear-gradient(180deg, #FFF8EC, #FDEBD0)" }}
+      >
+        {built.map((id) => {
+          const part = TEMPLE_PARTS.find((p) => p.id === id);
+          return (
+            <div
+              key={id}
+              className="flex items-center justify-center rounded-md mb-1 text-2xl"
+              style={{ width: "70%", height: part.height, background: "#FF993322", border: "1px solid #FF993355" }}
+            >
+              {part.emoji}
+            </div>
+          );
+        })}
+      </div>
+
+      {complete ? (
+        <div className="text-center mt-4">
+          <div className="text-4xl">🎉</div>
+          <div className="font-bold text-[#1F3B73] mt-2" style={{ fontFamily: "'Baloo 2'" }}>You built the temple!</div>
+        </div>
+      ) : (
+        <>
+          <div className="text-center text-sm font-semibold text-[#1F3B73] mt-4 mb-2" style={{ fontFamily: "'Baloo 2'" }}>
+            Tap the next piece to add
+          </div>
+          <div className="grid grid-cols-2 gap-2">
+            {options.filter((id) => !built.includes(id)).map((id) => {
+              const part = TEMPLE_PARTS.find((p) => p.id === id);
+              return (
+                <button
+                  key={id}
+                  onClick={() => tapPart(id)}
+                  className="rounded-xl px-3 py-3 text-sm font-semibold border text-left"
+                  style={{ background: wrongId === id ? "#E94F8033" : "#FFFFFF", borderColor: "#EADFC8", color: "#1F3B73" }}
+                >
+                  {part.emoji} {part.label}
+                </button>
+              );
+            })}
+          </div>
+        </>
+      )}
+
+      {message && (
+        <div className="mt-4 rounded-xl p-3 text-sm text-[#1F3B73]" style={{ background: "#3D997022", fontFamily: "'Nunito'" }}>
+          {message}
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* ---------- Game: Hanuman's Leap ---------- */
+
+function HanumanFlyingGame() {
+  const { bump } = useStats();
+  const [gameState, setGameState] = useState("ready"); // ready | playing | gameover
+  const [isJumping, setIsJumping] = useState(false);
+  const [obstacles, setObstacles] = useState([]); // [{ id, x }] x in % (0-105)
+  const [score, setScore] = useState(0);
+  const [lives, setLives] = useState(3);
+  const [best, setBest] = useState(0);
+
+  const isJumpingRef = useRef(false);
+  const gameStateRef = useRef("ready");
+  const scoreRef = useRef(0);
+  const nextObstacleIn = useRef(60);
+  const rafRef = useRef(null);
+  const lastTime = useRef(0);
+  const invincibleUntil = useRef(0);
+
+  useEffect(() => { isJumpingRef.current = isJumping; }, [isJumping]);
+  useEffect(() => { gameStateRef.current = gameState; }, [gameState]);
+  useEffect(() => { scoreRef.current = score; }, [score]);
+
+  const jump = () => {
+    if (gameStateRef.current !== "playing" || isJumpingRef.current) return;
+    setIsJumping(true);
+  };
+
+  const startGame = () => {
+    setScore(0);
+    setLives(3);
+    setObstacles([]);
+    nextObstacleIn.current = 60;
+    lastTime.current = performance.now();
+    setGameState("playing");
+  };
+
+  useEffect(() => {
+    if (gameState !== "playing") return;
+
+    const tick = (time) => {
+      const dt = Math.min(50, time - lastTime.current || 16);
+      lastTime.current = time;
+      const speed = 0.16 + Math.min(0.14, scoreRef.current * 0.0006);
+
+      setObstacles((prev) => {
+        let next = prev.map((o) => ({ ...o, x: o.x - speed * dt })).filter((o) => o.x > -8);
+
+        nextObstacleIn.current -= dt / 16.6;
+        if (nextObstacleIn.current <= 0) {
+          next = [...next, { id: Math.random(), x: 105 }];
+          nextObstacleIn.current = 55 + Math.random() * 30;
+        }
+
+        for (const o of next) {
+          if (o.x < 17 && o.x > 5 && !isJumpingRef.current && time > invincibleUntil.current) {
+            invincibleUntil.current = time + 1200;
+            setLives((l) => {
+              const nl = l - 1;
+              if (nl <= 0) {
+                setBest((b) => Math.max(b, Math.floor(scoreRef.current)));
+                bump("kindnessScore", Math.min(10, Math.floor(scoreRef.current / 5)));
+                setGameState("gameover");
+              }
+              return nl;
+            });
+          }
+        }
+        return next;
+      });
+
+      setScore((s) => s + dt / 100);
+
+      if (gameStateRef.current === "playing") {
+        rafRef.current = requestAnimationFrame(tick);
+      }
+    };
+
+    rafRef.current = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(rafRef.current);
+  }, [gameState]);
+
+  useEffect(() => {
+    const onKey = (e) => { if (e.code === "Space") { e.preventDefault(); jump(); } };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
+
+  const onJumpAnimEnd = () => setIsJumping(false);
+
+  return (
+    <div className="max-w-md mx-auto select-none">
+      <style>{`
+        @keyframes mld-hanuman-jump {
+          0% { transform: translateY(0); }
+          40% { transform: translateY(-68px); }
+          100% { transform: translateY(0); }
+        }
+      `}</style>
+
+      <div className="flex justify-between items-center mb-2 text-sm" style={{ fontFamily: "'Nunito'", color: "#1F3B73" }}>
+        <div>{"❤️".repeat(Math.max(0, lives))}</div>
+        <div>Score: {Math.floor(score)}</div>
+      </div>
+
+      <div
+        onClick={jump}
+        onTouchStart={(e) => { e.preventDefault(); jump(); }}
+        className="relative rounded-2xl border border-[#EADFC8] overflow-hidden cursor-pointer"
+        style={{ height: 220, background: "linear-gradient(180deg, #A7D8E8, #3D9970)" }}
+      >
+        {/* Ground line */}
+        <div className="absolute left-0 right-0" style={{ bottom: 30, height: 2, background: "#1F3B7333" }} />
+
+        {/* Hanuman */}
+        <div
+          onAnimationEnd={onJumpAnimEnd}
+          className="absolute text-4xl"
+          style={{
+            left: "8%",
+            bottom: 30,
+            animation: isJumping ? "mld-hanuman-jump 0.6s ease" : "none",
+          }}
+        >
+          🐒
+        </div>
+
+        {/* Obstacles (ocean waves) */}
+        {obstacles.map((o) => (
+          <div key={o.id} className="absolute text-3xl" style={{ left: `${o.x}%`, bottom: 26 }}>🌊</div>
+        ))}
+
+        {gameState === "ready" && (
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6" style={{ background: "#00000030" }}>
+            <div className="text-white font-bold text-lg mb-3" style={{ fontFamily: "'Baloo 2'" }}>
+              Help Hanuman leap across the ocean to Lanka!
+            </div>
+            <PrimaryButton onClick={(e) => { e.stopPropagation(); startGame(); }} color="#FF9933">Start</PrimaryButton>
+          </div>
+        )}
+
+        {gameState === "gameover" && (
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6" style={{ background: "#00000055" }}>
+            <div className="text-white font-bold text-lg mb-1" style={{ fontFamily: "'Baloo 2'" }}>
+              Great effort!
+            </div>
+            <div className="text-white text-sm mb-3">Score: {Math.floor(score)} · Best: {best}</div>
+            <PrimaryButton onClick={(e) => { e.stopPropagation(); startGame(); }} color="#FF9933">Try Again</PrimaryButton>
+          </div>
+        )}
+      </div>
+
+      <div className="text-xs text-center text-[#1F3B73]/50 mt-3" style={{ fontFamily: "'Nunito'" }}>
+        Tap the ocean, or press Space, to make Hanuman jump over the waves.
+      </div>
+    </div>
+  );
+}
+
 /* ---------- Feature: Emotional Wellness ---------- */
 
 function WellnessScreen() {
@@ -843,13 +1781,16 @@ function GratitudeJournalScreen() {
   const [helpedMe, setHelpedMe] = useState("");
   const [iHelped, setIHelped] = useState("");
   const [madeMeSmile, setMadeMeSmile] = useState("");
-  const [entries, setEntries] = useState([]);
   const today = new Date().toDateString();
   const savedToday = stats.gratitudeDates.includes(today);
 
   const save = () => {
-    setEntries((e) => [{ date: today, good: good.filter((g) => g.trim()) }, ...e]);
-    recordGratitudeToday();
+    recordGratitudeToday({
+      good: good.filter((g) => g.trim()),
+      helpedMe: helpedMe.trim() || null,
+      iHelped: iHelped.trim() || null,
+      madeMeSmile: madeMeSmile.trim() || null,
+    });
     setGood(["", "", ""]); setHelpedMe(""); setIHelped(""); setMadeMeSmile("");
   };
 
@@ -874,10 +1815,10 @@ function GratitudeJournalScreen() {
           className="rounded-xl border-2 border-[#EADFC8] px-4 py-2.5 outline-none focus:border-[#FF9933] bg-white disabled:opacity-50" />
       </div>
       <div className="mt-4"><PrimaryButton onClick={save} disabled={savedToday} color="#3D9970">Save Today's Entry</PrimaryButton></div>
-      {entries.length > 0 && (
+      {stats.gratitudeEntries.length > 0 && (
         <div className="mt-6">
           <div className="font-bold text-[#1F3B73] mb-2" style={{ fontFamily: "'Baloo 2'" }}>Past Entries</div>
-          {entries.map((e, i) => (
+          {stats.gratitudeEntries.slice(0, 10).map((e, i) => (
             <div key={i} className="rounded-xl bg-white border border-[#EADFC8] p-3 mb-2 text-sm">
               <div className="font-semibold">{e.date}</div>
               {e.good.map((g, j) => <div key={j}>• {g}</div>)}
@@ -892,7 +1833,8 @@ function GratitudeJournalScreen() {
 /* ---------- Feature: Parent Dashboard ---------- */
 
 function ParentDashboardScreen() {
-  const { stats } = useStats();
+  const { stats, resetProgress } = useStats();
+  const [confirmingReset, setConfirmingReset] = useState(false);
   const cards = [
     ["Stories Completed", stats.storiesCompleted, "#FF9933"],
     ["Questions Asked", stats.questionsAsked, "#3D9970"],
@@ -936,6 +1878,40 @@ function ParentDashboardScreen() {
           </div>
         ))}
       </div>
+
+      <div className="mt-8 pt-6 border-t border-[#EADFC8]">
+        {!confirmingReset ? (
+          <button
+            onClick={() => setConfirmingReset(true)}
+            className="text-sm text-[#1F3B73]/50 underline"
+            style={{ fontFamily: "'Nunito'" }}
+          >
+            Reset all progress on this device
+          </button>
+        ) : (
+          <div className="rounded-xl p-3" style={{ background: "#E94F8018" }}>
+            <div className="text-sm text-[#1F3B73] mb-2">
+              This clears everything saved on this device — stories completed, shlokas
+              learned, gratitude entries, kindness score. It can't be undone.
+            </div>
+            <div className="flex gap-2">
+              <button
+                onClick={() => setConfirmingReset(false)}
+                className="text-sm px-3 py-1.5 rounded-lg border border-[#EADFC8]"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={() => { resetProgress(); setConfirmingReset(false); }}
+                className="text-sm px-3 py-1.5 rounded-lg text-white font-semibold"
+                style={{ background: "#E94F80" }}
+              >
+                Yes, reset everything
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
@@ -949,6 +1925,7 @@ const SECTIONS = [
       { id: "story", title: "Ask Why", subtitle: 'Ask any "why should I..." question', color: "#FF9933", emoji: "📜" },
       { id: "chat", title: "Ask Anything", subtitle: "Chat about gods, festivals, and stories", color: "#3D9970", emoji: "💬" },
       { id: "personal", title: "My Own Story", subtitle: "Become the hero of a mythology tale", color: "#E94F80", emoji: "⭐" },
+      { id: "bedtime", title: "Bedtime Stories", subtitle: "Gentle stories to read together", color: "#1F3B73", emoji: "🌙" },
       { id: "shloka", title: "Shlokas", subtitle: "Learn Sanskrit verses, word by word", color: "#FF9933", emoji: "🕉️" },
     ],
   },
@@ -972,15 +1949,16 @@ const ALL_TILES = SECTIONS.flatMap((s) => s.tiles);
 function AppShell() {
   useGoogleFonts();
   const [tab, setTab] = useState("home");
-  const [game, setGame] = useState(null); // "memory" | "quiz" | null
+  const [game, setGame] = useState(null); // "memory" | "quiz" | "wordsearch" | "spotdiff" | "temple" | "hanumanleap" | null
 
   const goTo = (id) => {
     setTab(id);
     setGame(null);
   };
 
+  const GAME_TITLES = { memory: "Memory Match", quiz: "Mythology Quiz", wordsearch: "Word Search", spotdiff: "Spot the Difference", temple: "Temple Builder", hanumanleap: "Hanuman's Leap" };
   const currentTitle = tab === "games" && game
-    ? (game === "memory" ? "Memory Match" : "Mythology Quiz")
+    ? GAME_TITLES[game]
     : (ALL_TILES.find((t) => t.id === tab)?.title || (tab === "dashboard" ? "Parent Dashboard" : ""));
 
   return (
@@ -1051,10 +2029,15 @@ function AppShell() {
             {tab === "story" && <StoryEngineScreen />}
             {tab === "chat" && <ChatbotScreen />}
             {tab === "personal" && <PersonalizedStoryScreen />}
+            {tab === "bedtime" && <BedtimeStoriesScreen />}
             {tab === "shloka" && <ShlokaScreen />}
             {tab === "games" && !game && <GamesHubScreen onOpenGame={setGame} />}
             {tab === "games" && game === "memory" && <MemoryMatchGame />}
             {tab === "games" && game === "quiz" && <QuizGame />}
+            {tab === "games" && game === "wordsearch" && <WordSearchGame />}
+            {tab === "games" && game === "spotdiff" && <SpotDifferenceGame />}
+            {tab === "games" && game === "temple" && <TempleBuilderGame />}
+            {tab === "games" && game === "hanumanleap" && <HanumanFlyingGame />}
             {tab === "wellness" && <WellnessScreen />}
             {tab === "gratitude" && <GratitudeJournalScreen />}
             {tab === "dashboard" && <ParentDashboardScreen />}
