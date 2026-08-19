@@ -433,12 +433,69 @@ function Pill({ label, text, color }) {
   );
 }
 
+// Read-aloud helper for story text — built for ages 3-5 who can't read
+// fluently yet. Uses the browser's built-in speech synthesis (no AI/backend
+// call needed, so it's free and instant). English content, unlike the
+// Sanskrit shloka playback elsewhere in the app, so no voice-matching
+// complexity is needed here — the default voice reads English natively.
+function speakStoryText(text, { onEnd } = {}) {
+  if (!window.speechSynthesis) return false;
+  window.speechSynthesis.cancel();
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.rate = 0.92; // a touch slower than default, easier for young kids to follow
+  utter.pitch = 1.05;
+  utter.onend = () => onEnd && onEnd();
+  utter.onerror = () => onEnd && onEnd();
+  window.speechSynthesis.speak(utter);
+  return true;
+}
+
+function stopSpeaking() {
+  if (window.speechSynthesis) window.speechSynthesis.cancel();
+}
+
+function ReadAloudButton({ text, color = "#3D9970" }) {
+  const [playing, setPlaying] = useState(false);
+  const [supported, setSupported] = useState(true);
+
+  useEffect(() => {
+    setSupported(!!window.speechSynthesis);
+    return () => stopSpeaking();
+  }, []);
+
+  const toggle = () => {
+    if (playing) {
+      stopSpeaking();
+      setPlaying(false);
+    } else {
+      const ok = speakStoryText(text, { onEnd: () => setPlaying(false) });
+      if (ok) setPlaying(true);
+    }
+  };
+
+  if (!supported) return null;
+
+  return (
+    <button
+      onClick={toggle}
+      className="rounded-2xl px-5 py-2.5 font-bold text-white flex items-center gap-2 transition-transform active:scale-95"
+      style={{ background: playing ? "#E94F80" : color, fontFamily: "'Baloo 2'", boxShadow: `0 4px 0 ${shade(playing ? "#E94F80" : color)}` }}
+    >
+      {playing ? "⏹ Stop" : "🔊 Read to Me"}
+    </button>
+  );
+}
+
 function StoryDisplay({ story }) {
+  const fullText = `${story.title}. ${story.body} The moral of this story is: ${story.moral}${story.challenge ? ` Today's challenge: ${story.challenge}` : ""}`;
   return (
     <ScrollCard>
-      <h3 className="text-2xl md:text-3xl font-extrabold text-[#1F3B73]" style={{ fontFamily: "'Baloo 2'" }}>
-        {story.title}
-      </h3>
+      <div className="flex items-start justify-between gap-3 flex-wrap">
+        <h3 className="text-2xl md:text-3xl font-extrabold text-[#1F3B73]" style={{ fontFamily: "'Baloo 2'" }}>
+          {story.title}
+        </h3>
+        <ReadAloudButton text={fullText} />
+      </div>
       {story.sourceEpic && (
         <div className="text-sm italic text-[#B08D3E] mt-1" style={{ fontFamily: "'Nunito'" }}>
           from {story.sourceEpic}
@@ -780,6 +837,9 @@ function BedtimeStoriesScreen() {
           </button>
           {open === s.id && (
             <div className="px-5 pb-5" style={{ fontFamily: "'Nunito'" }}>
+              <div className="mb-3">
+                <ReadAloudButton text={`${s.title}. ${s.body.replace(/\n\n/g, " ")} The moral of this story is: ${s.moral}`} color="#1F3B73" />
+              </div>
               {s.body.split("\n\n").map((para, i) => (
                 <p key={i} className="text-[#1F3B73] leading-relaxed mb-3" style={{ fontSize: "16px" }}>{para}</p>
               ))}
